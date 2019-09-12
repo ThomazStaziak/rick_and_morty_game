@@ -55,7 +55,7 @@ const subScore = () => {
 const checkAnswer = evt => {
   evt.preventDefault();
 
-  const answer = input.value.toLowerCase();
+  const answer = input.value.toLowerCase().trim();
 
   if (answer === localStorage.getItem("rightAnswer")) {
     body.style.backgroundColor = "#30af2d";
