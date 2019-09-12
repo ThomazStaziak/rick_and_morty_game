@@ -57,6 +57,8 @@ const checkAnswer = evt => {
 
   const answer = input.value.toLowerCase().trim();
 
+  if (answer === "") return;
+
   if (answer === localStorage.getItem("rightAnswer")) {
     body.style.backgroundColor = "#30af2d";
     addScore();
